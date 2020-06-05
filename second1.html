@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="beige">
+	<h1 align = "center"><i><u>Welcome to Sasta Segreta</u></i></h1>
+	<h2 align = "center"><u>Q2</u></h2>
+	<br><br><br>
+	<image align = "center" src="lance.jpg"></image><br>
+	<p align = "center" id="clue">I am a good teacher, and so is Shivansh. But I don't think we got through to you....</p><br>
+	<label align = "center" for="txt1">PUT ANS HERE:</label><br>
+	<input align = "center" type="text" id="txt1" name="txt1"><br><br>
+  	<input type="button" value="Submit me!" align = "center" id="submit" onclick="checkAns()"><br><br><br>
+  	<hr width = "2000" color = "red" align = "center" ><br><br>
+  	<span align = "center" id="answ">Let's see what you have to say.</span>
+  	<script language="javascript" type = "text/javascript">
+  		function checkAns(){
+  			var ans = document.getElementById('txt1');
+  			if(ans.value==="cycling"){
+  			document.getElementById("answ").innerHTML = '<a href="third1.html"><button>Yeh type karte hue sharam aani chahiye. Seekhne ka mauka chhoda!</button></a>'
+  			}
+  			else{
+  				document.getElementById("answ").innerHTML = 'Try again, you can do better :-)'
+  			}
+
+  		}
+  	</script>
+</body>
+</html>
