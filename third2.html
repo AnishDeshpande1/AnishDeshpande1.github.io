@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="beige">
+	<h1 align = "center"><i><u>Welcome to Sasta Crypt Hunt</u></i></h1>
+	<h2 align = "center"><u>Q3</u></h2>
+	<br><br><br>
+	<image align = "center" src="viren.jpg"></image><image align = "center" src="doll.jpg"></image><br>
+	<p align = "center" id="clue">What is he studying? What is in the right picture (in hindi)? Put them together and you get.....</p><br>
+	<label align = "center" for="txt1">PUT ANS HERE:</label><br>
+	<input align = "center" type="text" id="txt1" name="txt1"><br><br>
+  	<input type="button" value="Submit me!" align = "center" id="submit" onclick="checkAns()"><br><br><br>
+  	<hr width = "2000" color = "red" align = "center" ><br><br>
+  	<span align = "center" id="answ">Let's see what you have to say.</span>
+  	<script language="javascript" type = "text/javascript">
+  		function checkAns(){
+  			var ans = document.getElementById('txt1');
+  			if(ans.value==="trisha"){
+  			document.getElementById("answ").innerHTML = '<a href="fourth2.html"><button>Abhi voh Cornell mein hain. Bade log</button></a>'
+  			}
+  			else{
+  				document.getElementById("answ").innerHTML = 'Dont you remember who we are talking about? XD'
+  			}
+
+  		}
+  	</script>
+</body>
+</html>
