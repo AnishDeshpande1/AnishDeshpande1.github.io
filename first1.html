@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="beige">
+	<h1 align = "center"><i><u>Welcome to Sasta Segreta</u></i></h1>
+	<h2 align = "center"><u>Q1</u></h2>
+	<br><br><br>
+	<image align = "center" src="orange.jpg"></image><br>
+	<p align = "center" id="clue">This is easy for you!</p><br>
+	<label align = "center" for="txt1">PUT ANS HERE:</label><br>
+	<input align = "center" type="text" id="txt1" name="txt1"><br><br>
+  	<input type="button" value="Submit me!" align = "center" id="submit" onclick="checkAns()"><br><br><br>
+  	<hr width = "2000" color = "red" align = "center" ><br><br>
+  	<span align = "center" id="answ">Let's see what you have to say.</span>
+  	<script language="javascript" type = "text/javascript">
+  		function checkAns(){
+  			var ans = document.getElementById('txt1');
+  			if(ans.value==="nagpur"){
+  			document.getElementById("answ").innerHTML = '<a href="second1.html"><button>As expected! Aage badho.</button></a>'
+  			}
+  			else{
+  				document.getElementById("answ").innerHTML = 'Try again, you can do better :-)'
+  			}
+
+  		}
+  	</script>
+</body>
+</html>
